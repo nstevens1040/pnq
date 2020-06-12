@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
+    console.log(window.location.search.split('=')[2]);
     document.location.href = "https://nanick.hopto.org/" + window.location.search.split('=')[2];
 });
 </script>
