@@ -1,4 +1,4 @@
-# pnq
+# PNQ Relay  
 redirect without 301
 
 ## Usage  
