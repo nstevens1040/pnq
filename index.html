@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8"/>
-<script type="text/javascript">
-    var filterd = function (a) {
-        return a.match("d=");
-    }
-    var filterp = function (a) {
-        return a.match("p=");
-    }
-    var doma = [...document.location.search.split('&')].filter(filterd)[0].split('=')[1];
-    var path = [...document.location.search.split('&')].filter(filterp)[0].split('=')[1];
-    document.location.href = "https://" + doma + "/" + path;
-</script>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>PNQ RELAY</title>
+        <script type="text/javascript">
+            var filterd = function (a) {
+                return a.match("d=");
+            }
+            var filterp = function (a) {
+                return a.match("p=");
+            }
+            var doma = [...document.location.search.split('&')].filter(filterd)[0].split('=')[1];
+            var path = [...document.location.search.split('&')].filter(filterp)[0].split('=')[1];
+            document.location.href = "https://" + doma + "/" + path;
+        </script>
+    </head>
+    <body>
+        <div><h1>Redirecting</h1></div>
+    </body>
 </html>
