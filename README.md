@@ -1,6 +1,5 @@
 # PNQ Relay  
-redirect without 301
-
+Redirect without 301  
 ## Usage  
 In your browser, navigate to: "https://nstevens1040.github.io/pnq/?d=" + &lt;website domain&gt; + "&p=" + &lt;website path&gt;
 ## Example  
