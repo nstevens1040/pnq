@@ -10,8 +10,8 @@
             var filterp = function (a) {
                 return a.match("p=");
             }
-            var doma = [...document.location.search.split('&')].filter(filterd)[0].split('=')[1];
-            var path = [...document.location.search.split('&')].filter(filterp)[0].split('=')[1];
+            var doma = decodeURIComponent([...document.location.search.split('&')].filter(filterd)[0].split('=')[1]);
+            var path = decodeURIComponent([...document.location.search.split('&')].filter(filterp)[0].split('=')[1]);
             document.location.href = "https://" + doma + "/" + path;
         </script>
     </head>
